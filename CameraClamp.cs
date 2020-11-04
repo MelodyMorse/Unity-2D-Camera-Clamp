@@ -53,11 +53,12 @@ public class CameraClamp : MonoBehaviour
 
     private void OnValidate()
     {
-        cam = GetComponent<Camera>();
+        //cam = GetComponent<Camera>();
         if (!initialized)
         {
             Initialize();
         }
+        CalculateExtents();
     }
 
     private void Start()
@@ -96,8 +97,9 @@ public class CameraClamp : MonoBehaviour
     }
     private void CalculateExtents()
     {
-        verticalExtents = cam.orthographicSize;
-        horizontalExtents = cam.orthographicSize * cam.aspect;
+        
+        verticalExtents = Camera.orthographicSize;
+        horizontalExtents = Camera.orthographicSize * Camera.aspect;
     }
     private void Clamp()
     {
@@ -106,4 +108,3 @@ public class CameraClamp : MonoBehaviour
                             transform.position.z);
     }
 }
-
