@@ -1,7 +1,7 @@
 # Unity 2D Camera Clamp
 ##### A monobehavior that clamps the camera to a specified area
 
-Put this script on a camera Gameobject to clamp it to specified minimum and maximum coordinates.  Adjust camera bounds with variables xMin, xMax, yMin, yMax.  These values indicate the world space coordinates that the edges of the camera can not exceed. A custom gizmo renders a green rectangle that shows the current bounds of the camera
+Put CameraClamp.cs on a camera Gameobject to clamp it to specified minimum and maximum coordinates.  Adjust camera bounds with variables xMin, xMax, yMin, yMax.  These values indicate the world space coordinates that the edges of the camera can not exceed. A custom gizmo renders a green rectangle that shows the current bounds of the camera
 
 ##### Notes:
 * Designed for use with orthographic camera.
